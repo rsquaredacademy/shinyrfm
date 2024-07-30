@@ -16,7 +16,8 @@ knitr::opts_chunk$set(
 # shinyrfm
 
 <!-- badges: start -->
-  [![Codecov test coverage](https://codecov.io/gh/rsquaredacademy/shinyrfm/branch/master/graph/badge.svg)](https://app.codecov.io/gh/rsquaredacademy/shinyrfm?branch=master)
+[![R-CMD-check](https://github.com/rsquaredacademy/shinyrfm/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rsquaredacademy/shinyrfm/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/rsquaredacademy/shinyrfm/branch/master/graph/badge.svg)](https://app.codecov.io/gh/rsquaredacademy/shinyrfm?branch=master)
 <!-- badges: end -->
   
 The goal of shinyrfm is to ...

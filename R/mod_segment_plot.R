@@ -12,6 +12,7 @@
 #' @param input, output, session Internal parameters for {shiny}.
 #'
 #' @importFrom rfm rfm_plot_segment
+#' @importFrom treemapify geom_treemap
 #' @noRd
 #'
 segment_plot_ui <- function(id) {

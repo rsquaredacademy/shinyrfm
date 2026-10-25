@@ -1,9 +1,9 @@
 Package: shinytrack
 Type: Package
-Title: Tool for Interactive RFM Analysis 
+Title: Tool for Interactive RFM Analysis
 Version: 0.1.0
 Authors@R: person("Aravind", "Hebbali", email = "hebbali.aravind@gmail.com", role = c("aut", "cre"))
-Description: Interactively perform recency, frequency and monetary value 
+Description: Interactively perform recency, frequency and monetary value
     analysis using 'shiny'. Includes project management features.
 Depends:
     R(>= 3.2.4)
@@ -14,18 +14,18 @@ Imports:
     htmltools,
     plotly,
     readxl,
-    rfm,
+    rfm (>= 0.5.0),
     rlang,
     shiny,
     shinydashboard,
     shinydashboardPlus,
     standby,
     stringi,
+    treemapify,
     utils
-License: MIT + file LICENSE 
+License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
 RoxygenNote: 7.3.2
-Suggests: 
+Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

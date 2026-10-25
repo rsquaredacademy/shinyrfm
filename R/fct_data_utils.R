@@ -259,18 +259,18 @@ modify_data_type <- function(data, input, data_types, new_names) {
   out <- list()
 
   for (i in seq_len(length(data()))) {
-    if (data_types()[i] == 'Date') {
-      inp <- eval(parse(text = paste0('input$', paste0('date_type_', i))))
-      out[[i]] <- eval(
-        parse(
-          text = paste0("as.", data_types()[i], "(data()$",
-                        names(data())[i], ", format = '", inp, "')")))
-    } else {
-      out[[i]] <- eval(
-        parse(
-          text = paste0("as.", data_types()[i], "(data()$",
-                        names(data())[i], ")")))
-    }
+    column <- data()[[i]]
+    type <- data_types()[i]
+
+    out[[i]] <- switch(
+      type,
+      numeric   = as.numeric(column),
+      factor    = as.factor(column),
+      Date      = as.Date(column, format = input[[paste0("date_type_", i)]]),
+      character = as.character(column),
+      integer   = as.integer(column),
+      stop("Unsupported data type: ", type, call. = FALSE)
+    )
   }
 
   names(out) <- new_names()

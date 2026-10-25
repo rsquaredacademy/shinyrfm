@@ -213,8 +213,6 @@ upload_server <- function(id, parent, flag, btn) {
             position = "bottomCenter"
           )
 
-          Sys.sleep(2)
-
           # create directory
           dir.create(paste0(proj_meta$path, "/",
                      proj_meta$global_dir, "/",
@@ -246,8 +244,6 @@ upload_server <- function(id, parent, flag, btn) {
             position = "bottomCenter"
           )
 
-          Sys.sleep(2)
-
           if (!is.null(data())) {
             save_raw_data(data()$raw_data)
             save_selected_data(data()$selected_data)
@@ -267,8 +263,6 @@ upload_server <- function(id, parent, flag, btn) {
             message_color = "white",
             position = "bottomCenter"
           )
-
-          Sys.sleep(2)
 
           proj_config <- readRDS(paste0(proj_meta$path, "/",
                                           proj_meta$global_dir, "/",
@@ -299,9 +293,6 @@ upload_server <- function(id, parent, flag, btn) {
             message_color = "white",
             position = "bottomCenter"
           )
-
-          Sys.sleep(2)
-
 
           get_columns_selected(proj_config$cols_selected)
           get_new_col_names(proj_config$col_new_names)
@@ -367,9 +358,6 @@ upload_server <- function(id, parent, flag, btn) {
           message_color = "white",
           position = "bottomCenter"
         )
-
-        Sys.sleep(2)
-
 
         get_columns_selected(proj_config$cols_selected)
         get_new_col_names(proj_config$col_new_names)

@@ -85,8 +85,6 @@ delete_project_server <- function(id, parent, btn, path) {
         position = "bottomCenter"
       )
 
-      Sys.sleep(3)
-
       unlink(paste0(path(), "/rfm-projects/", input$select_project), 
              recursive = TRUE)
 

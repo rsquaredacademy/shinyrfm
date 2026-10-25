@@ -175,7 +175,6 @@ generate_segment_server <- function(id, parent, data, flag) {
 
 
       updateTabItems(session = parent, "tabs", "tab_segments")
-      Sys.sleep(3)
     })
 
     observeEvent(input$back, {

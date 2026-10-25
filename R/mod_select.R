@@ -131,8 +131,6 @@ select_server <- function(id, parent, data, flag, btn, sample) {
           position = "bottomCenter"
         )
 
-        Sys.sleep(2)
-
         observeEvent(input$`next`, {
           updateTabItems(session = parent, "tabs", "tab_transform")
         })

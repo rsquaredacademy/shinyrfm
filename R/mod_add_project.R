@@ -81,8 +81,6 @@ add_project_server <- function(id, parent) {
           position = "bottomCenter"
         )
 
-        Sys.sleep(2)
-
         updateTextInput(session, "project_title", value = "")
         updateTabItems(session = parent, "tabs", "tab_upload")
       }

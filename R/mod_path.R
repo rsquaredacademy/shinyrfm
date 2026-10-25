@@ -52,8 +52,6 @@ path_server <- function(id, parent, flag) {
           position = "bottomCenter"
         )
 
-        Sys.sleep(2)
-
         updateTextInput(session, "path", "Directory", folder_path)
 
         if (flag() == "new_project") {
@@ -105,8 +103,6 @@ path_server <- function(id, parent, flag) {
       set_dir_flag()
       set_path(input$path)
 
-      Sys.sleep(1)
-
       if (flag() == "restore_project" || flag() == "clone_project" || flag() == "delete_project") {
         toast(
           title = "",
@@ -119,8 +115,6 @@ path_server <- function(id, parent, flag) {
           position = "bottomCenter"
         )
       }
-
-      Sys.sleep(2)
 
       if (flag() == "new_project") {
         updateTabItems(session = parent, "tabs", "tab_add_project")

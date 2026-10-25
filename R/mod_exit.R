@@ -69,13 +69,11 @@ exit_server <- function(id, parent, flag) {
                 position = "bottomCenter"
               )
 
-              Sys.sleep(4)
               updateTabItems(session = parent, "tabs", "tab_upload")
             }
           }
         }
       }
-      #Sys.sleep(4)
       stopApp()
     })
 

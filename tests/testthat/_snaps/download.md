@@ -35,7 +35,7 @@
                 </div>
               </div>
               <div class="col-sm-12" align="center">
-                <a id="download_segment-btn_download" class="btn btn-default shiny-download-link disabled" href="" target="_blank" download aria-disabled="true" tabindex="-1">
+                <a aria-disabled="true" class="btn btn-default shiny-download-link disabled" download href="" id="download_segment-btn_download" tabindex="-1" target="_blank">
                   <i class="fas fa-download" role="presentation" aria-label="download icon"></i>
                   Download
                 </a>
@@ -50,16 +50,10 @@
           <div class="nav-buttons">
             <div class="row">
               <div class="col-sm-6" align="left">
-                <button id="download_segment-back" type="button" class="btn btn-default action-button">
-                  <i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i>
-                  Back
-                </button>
+                <button id="download_segment-back" type="button" class="btn btn-default action-button"><span class="action-icon"><i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i></span><span class="action-label">Back</span></button>
               </div>
               <div class="col-sm-6" align="right">
-                <button id="download_segment-next" type="button" class="btn btn-default action-button" onclick="App.highlightTab(this, &#39;exit-tab&#39;)">
-                  <i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i>
-                  Next
-                </button>
+                <button id="download_segment-next" type="button" class="btn btn-default action-button" onclick="App.highlightTab(this, &#39;exit-tab&#39;)"><span class="action-icon"><i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i></span><span class="action-label">Next</span></button>
               </div>
             </div>
           </div>

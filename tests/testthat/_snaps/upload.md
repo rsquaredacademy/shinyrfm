@@ -18,10 +18,7 @@
                 <div id="upload-nav_btns" class="shiny-html-output"></div>
               </div>
               <div class="col-sm-6" align="right">
-                <button class="btn btn-default action-button btn-next btn-next-delay" id="upload-next" type="button">
-                  <i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i>
-                  Next
-                </button>
+                <button class="btn btn-default action-button btn-next btn-next-delay" id="upload-next" type="button"><span class="action-icon"><i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i></span><span class="action-label">Next</span></button>
               </div>
             </div>
           </div>

@@ -28,24 +28,18 @@
               <div class="col-sm-12" align="center">
                 <div class="form-group shiny-input-container">
                   <label class="control-label" id="add_project-project_title-label" for="add_project-project_title">Project Title</label>
-                  <input id="add_project-project_title" type="text" class="shiny-input-text form-control" value=""/>
+                  <input id="add_project-project_title" type="text" class="shiny-input-text form-control" value="" data-update-on="change"/>
                 </div>
-                <button class="btn btn-default action-button btn-create-new-project" id="add_project-btn_create_project" onclick="App.highlightTab(this, &#39;next-tab&#39;)" type="button">Create Project</button>
+                <button class="btn btn-default action-button btn-create-new-project" id="add_project-btn_create_project" onclick="App.highlightTab(this, &#39;next-tab&#39;)" type="button"><span class="action-label">Create Project</span></button>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6" align="left">
-              <button id="add_project-back" type="button" class="btn btn-default action-button">
-                <i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i>
-                Back
-              </button>
+              <button id="add_project-back" type="button" class="btn btn-default action-button"><span class="action-icon"><i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i></span><span class="action-label">Back</span></button>
             </div>
             <div class="col-sm-6" align="right">
-              <button class="btn btn-default action-button btn-next" id="add_project-next" onclick="App.highlightTab(this, &#39;next-tab&#39;)" type="button">
-                <i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i>
-                Next
-              </button>
+              <button class="btn btn-default action-button btn-next" id="add_project-next" onclick="App.highlightTab(this, &#39;next-tab&#39;)" type="button"><span class="action-icon"><i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i></span><span class="action-label">Next</span></button>
             </div>
           </div>
         </div>

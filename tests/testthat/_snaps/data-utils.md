@@ -81,7 +81,7 @@
         <div class="col-sm-12" align="center">
           <div class="form-group shiny-input-container" style="width:120px;">
             <label class="control-label" id="upload-sheet_n-label" for="upload-sheet_n">Sheet</label>
-            <input id="upload-sheet_n" type="number" class="shiny-input-number form-control" value="1" min="1" step="1"/>
+            <input id="upload-sheet_n" type="number" class="shiny-input-number form-control" value="1" data-update-on="change" min="1" step="1"/>
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@
       <br/>
       <div class="row">
         <div class="col-sm-12" align="center">
-          <button id="upload-btn_restore_project" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)">Submit</button>
+          <button id="upload-btn_restore_project" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)"><span class="action-label">Submit</span></button>
         </div>
       </div>
 
@@ -193,7 +193,7 @@
         </div>
         <div class="row">
           <div class="col-sm-12" align="center">
-            <button id="upload-btn_restore_project" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)">Submit</button>
+            <button id="upload-btn_restore_project" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)"><span class="action-label">Submit</span></button>
           </div>
         </div>
       </div>

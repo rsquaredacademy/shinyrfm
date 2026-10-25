@@ -23,10 +23,10 @@
                 </div>
                 <div class="col-sm-6 offset-md-2 col-sm-offset-2" align="right">
                   <div class="col-sm-4 offset-md-4 col-sm-offset-4" align="center">
-                    <button class="btn btn-default action-button btn_customize_plot" id="segment_summary_plot-btn_customize" onclick="App.plotOptions(this, &#39;customize&#39;)" style="width:120px;" type="button">Modify</button>
+                    <button class="btn btn-default action-button btn_customize_plot" id="segment_summary_plot-btn_customize" onclick="App.plotOptions(this, &#39;customize&#39;)" style="width:120px;" type="button"><span class="action-label">Modify</span></button>
                   </div>
                   <div class="col-sm-4" align="right">
-                    <button class="btn btn-default action-button btn_download_opt" id="segment_summary_plot-btn_download_opt" onclick="App.plotOptions(this, &#39;toggle&#39;)" style="width:120px;" type="button">Export</button>
+                    <button class="btn btn-default action-button btn_download_opt" id="segment_summary_plot-btn_download_opt" onclick="App.plotOptions(this, &#39;toggle&#39;)" style="width:120px;" type="button"><span class="action-label">Export</span></button>
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@
                       </div>
                     </div>
                     <div class="col-sm-4" align="right">
-                      <a id="segment_summary_plot-btn_download_plot" class="btn btn-default shiny-download-link disabled" href="" target="_blank" download aria-disabled="true" tabindex="-1">
+                      <a aria-disabled="true" class="btn btn-default shiny-download-link disabled" download href="" id="segment_summary_plot-btn_download_plot" tabindex="-1" target="_blank">
                         <i class="fas fa-download" role="presentation" aria-label="download icon"></i>
                         Download
                       </a>
@@ -74,10 +74,7 @@
                       <h4>Modify Plot</h4>
                     </div>
                     <div class="col-sm-6" align="right">
-                      <button class="btn btn-default action-button btn_minimize" id="segment_summary_plot-btn_minimize" onclick="App.plotOptions(this, &#39;resize&#39;)" type="button">
-                        <i class="far fa-window-minimize" role="presentation" aria-label="window-minimize icon"></i>
-                        
-                      </button>
+                      <button class="btn btn-default action-button btn_minimize" id="segment_summary_plot-btn_minimize" onclick="App.plotOptions(this, &#39;resize&#39;)" type="button"><span class="action-icon"><i class="far fa-window-minimize" role="presentation" aria-label="window-minimize icon"></i></span><span class="action-label"></span></button>
                     </div>
                     <div class="col-sm-12" align="center">
                       <hr/>
@@ -103,7 +100,7 @@
                     <div class="col-sm-12" align="left">
                       <div class="form-group shiny-input-container">
                         <label class="control-label" id="segment_summary_plot-plot_title-label" for="segment_summary_plot-plot_title">Plot title</label>
-                        <input id="segment_summary_plot-plot_title" type="text" class="shiny-input-text form-control" value="Customer Distribution by Segment"/>
+                        <input id="segment_summary_plot-plot_title" type="text" class="shiny-input-text form-control" value="Customer Distribution by Segment" data-update-on="change"/>
                       </div>
                     </div>
                   </details>
@@ -112,13 +109,13 @@
                     <div class="col-sm-5" align="left">
                       <div class="form-group shiny-input-container">
                         <label class="control-label" id="segment_summary_plot-x_axis_label-label" for="segment_summary_plot-x_axis_label">X Axis Label</label>
-                        <input id="segment_summary_plot-x_axis_label" type="text" class="shiny-input-text form-control" value="Segment"/>
+                        <input id="segment_summary_plot-x_axis_label" type="text" class="shiny-input-text form-control" value="Segment" data-update-on="change"/>
                       </div>
                     </div>
                     <div class="col-sm-5 offset-md-2 col-sm-offset-2" align="left">
                       <div class="form-group shiny-input-container">
                         <label class="control-label" id="segment_summary_plot-y_axis_label-label" for="segment_summary_plot-y_axis_label">Y Axis Label</label>
-                        <input id="segment_summary_plot-y_axis_label" type="text" class="shiny-input-text form-control" value="Customers"/>
+                        <input id="segment_summary_plot-y_axis_label" type="text" class="shiny-input-text form-control" value="Customers" data-update-on="change"/>
                       </div>
                     </div>
                   </details>
@@ -152,7 +149,7 @@
                       <div class="col-sm-4" align="left">
                         <div class="form-group shiny-input-container">
                           <label class="control-label" id="segment_summary_plot-axis_label_size-label" for="segment_summary_plot-axis_label_size"></label>
-                          <input id="segment_summary_plot-axis_label_size" type="number" class="shiny-input-number form-control" value="8"/>
+                          <input id="segment_summary_plot-axis_label_size" type="number" class="shiny-input-number form-control" value="8" data-update-on="change"/>
                         </div>
                       </div>
                       <div class="col-sm-2" align="right">
@@ -161,7 +158,7 @@
                       <div class="col-sm-4" align="left">
                         <div class="form-group shiny-input-container">
                           <label class="control-label" id="segment_summary_plot-axis_label_angle-label" for="segment_summary_plot-axis_label_angle"></label>
-                          <input id="segment_summary_plot-axis_label_angle" type="number" class="shiny-input-number form-control" value="315"/>
+                          <input id="segment_summary_plot-axis_label_angle" type="number" class="shiny-input-number form-control" value="315" data-update-on="change"/>
                         </div>
                       </div>
                     </div>
@@ -215,16 +212,10 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-6" align="center">
-                    <button class="btn btn-default action-button btn_reset_plot" id="segment_summary_plot-btn_reset" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button">
-                      <i class="fas fa-arrow-rotate-left" role="presentation" aria-label="arrow-rotate-left icon"></i>
-                      Reset
-                    </button>
+                    <button class="btn btn-default action-button btn_reset_plot" id="segment_summary_plot-btn_reset" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button"><span class="action-icon"><i class="fas fa-arrow-rotate-left" role="presentation" aria-label="arrow-rotate-left icon"></i></span><span class="action-label">Reset</span></button>
                   </div>
                   <div class="col-sm-6" align="center">
-                    <button class="btn btn-default action-button btn_resize_plot" id="segment_summary_plot-btn_resize" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button">
-                      <i class="fas fa-check" role="presentation" aria-label="check icon"></i>
-                      Generate
-                    </button>
+                    <button class="btn btn-default action-button btn_resize_plot" id="segment_summary_plot-btn_resize" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button"><span class="action-icon"><i class="fas fa-check" role="presentation" aria-label="check icon"></i></span><span class="action-label">Generate</span></button>
                   </div>
                 </div>
               </div>
@@ -236,16 +227,10 @@
           <div class="nav-buttons">
             <div class="row">
               <div class="col-sm-6" align="left">
-                <button class="btn btn-default action-button btn-back" id="segment_summary_plot-back" type="button">
-                  <i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i>
-                  Back
-                </button>
+                <button class="btn btn-default action-button btn-back" id="segment_summary_plot-back" type="button"><span class="action-icon"><i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i></span><span class="action-label">Back</span></button>
               </div>
               <div class="col-sm-6" align="right">
-                <button class="btn btn-default action-button btn-next" id="segment_summary_plot-next" type="button">
-                  <i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i>
-                  Next
-                </button>
+                <button class="btn btn-default action-button btn-next" id="segment_summary_plot-next" type="button"><span class="action-icon"><i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i></span><span class="action-label">Next</span></button>
               </div>
             </div>
           </div>

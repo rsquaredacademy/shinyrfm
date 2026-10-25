@@ -19,10 +19,10 @@
         </div>
         <div class="col-sm-6 offset-md-2 col-sm-offset-2" align="right">
           <div class="col-sm-4 offset-md-4 col-sm-offset-4" align="center">
-            <button class="btn btn-default action-button btn_customize_plot" id="plot-btn_customize" onclick="App.plotOptions(this, &#39;customize&#39;)" style="width:120px;" type="button">Modify</button>
+            <button class="btn btn-default action-button btn_customize_plot" id="plot-btn_customize" onclick="App.plotOptions(this, &#39;customize&#39;)" style="width:120px;" type="button"><span class="action-label">Modify</span></button>
           </div>
           <div class="col-sm-4" align="right">
-            <button class="btn btn-default action-button btn_download_opt" id="plot-btn_download_opt" onclick="App.plotOptions(this, &#39;toggle&#39;)" style="width:120px;" type="button">Export</button>
+            <button class="btn btn-default action-button btn_download_opt" id="plot-btn_download_opt" onclick="App.plotOptions(this, &#39;toggle&#39;)" style="width:120px;" type="button"><span class="action-label">Export</span></button>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
               </div>
             </div>
             <div class="col-sm-4" align="right">
-              <a id="plot-btn_download_plot" class="btn btn-default shiny-download-link disabled" href="" target="_blank" download aria-disabled="true" tabindex="-1">
+              <a aria-disabled="true" class="btn btn-default shiny-download-link disabled" download href="" id="plot-btn_download_plot" tabindex="-1" target="_blank">
                 <i class="fas fa-download" role="presentation" aria-label="download icon"></i>
                 Download
               </a>
@@ -95,16 +95,10 @@
     Output
       <div class="row">
         <div class="col-sm-6" align="center">
-          <button class="btn btn-default action-button btn_reset_plot" id="plot-btn_reset" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button">
-            <i class="fas fa-arrow-rotate-left" role="presentation" aria-label="arrow-rotate-left icon"></i>
-            Reset
-          </button>
+          <button class="btn btn-default action-button btn_reset_plot" id="plot-btn_reset" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button"><span class="action-icon"><i class="fas fa-arrow-rotate-left" role="presentation" aria-label="arrow-rotate-left icon"></i></span><span class="action-label">Reset</span></button>
         </div>
         <div class="col-sm-6" align="center">
-          <button class="btn btn-default action-button btn_resize_plot" id="plot-btn_resize" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button">
-            <i class="fas fa-check" role="presentation" aria-label="check icon"></i>
-            Generate
-          </button>
+          <button class="btn btn-default action-button btn_resize_plot" id="plot-btn_resize" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button"><span class="action-icon"><i class="fas fa-check" role="presentation" aria-label="check icon"></i></span><span class="action-label">Generate</span></button>
         </div>
       </div>
 
@@ -118,7 +112,7 @@
         <div class="col-sm-12" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-plot_title-label" for="plot-plot_title">Plot title</label>
-            <input id="plot-plot_title" type="text" class="shiny-input-text form-control" value="Bar Chart"/>
+            <input id="plot-plot_title" type="text" class="shiny-input-text form-control" value="Bar Chart" data-update-on="change"/>
           </div>
         </div>
       </details>
@@ -133,13 +127,13 @@
         <div class="col-sm-5" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-x_axis_label-label" for="plot-x_axis_label">X Axis Label</label>
-            <input id="plot-x_axis_label" type="text" class="shiny-input-text form-control" value="Recency"/>
+            <input id="plot-x_axis_label" type="text" class="shiny-input-text form-control" value="Recency" data-update-on="change"/>
           </div>
         </div>
         <div class="col-sm-5 offset-md-2 col-sm-offset-2" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-y_axis_label-label" for="plot-y_axis_label">Y Axis Label</label>
-            <input id="plot-y_axis_label" type="text" class="shiny-input-text form-control" value="Frequency"/>
+            <input id="plot-y_axis_label" type="text" class="shiny-input-text form-control" value="Frequency" data-update-on="change"/>
           </div>
         </div>
       </details>
@@ -235,7 +229,7 @@
           <div class="col-sm-4" align="left">
             <div class="form-group shiny-input-container">
               <label class="control-label" id="plot-axis_label_size-label" for="plot-axis_label_size"></label>
-              <input id="plot-axis_label_size" type="number" class="shiny-input-number form-control" value="8"/>
+              <input id="plot-axis_label_size" type="number" class="shiny-input-number form-control" value="8" data-update-on="change"/>
             </div>
           </div>
           <div class="col-sm-2" align="right">
@@ -244,7 +238,7 @@
           <div class="col-sm-4" align="left">
             <div class="form-group shiny-input-container">
               <label class="control-label" id="plot-axis_label_angle-label" for="plot-axis_label_angle"></label>
-              <input id="plot-axis_label_angle" type="number" class="shiny-input-number form-control" value="315"/>
+              <input id="plot-axis_label_angle" type="number" class="shiny-input-number form-control" value="315" data-update-on="change"/>
             </div>
           </div>
         </div>
@@ -316,7 +310,7 @@
           <div class="col-sm-4" align="left">
             <div class="form-group shiny-input-container">
               <label class="control-label" id="plot-bar_label_size-label" for="plot-bar_label_size"></label>
-              <input id="plot-bar_label_size" type="number" class="shiny-input-number form-control" value="2.5" min="1" step="0.1"/>
+              <input id="plot-bar_label_size" type="number" class="shiny-input-number form-control" value="2.5" data-update-on="change" min="1" step="0.1"/>
             </div>
           </div>
         </div>
@@ -332,7 +326,7 @@
         <div class="col-sm-12" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-legend_title-label" for="plot-legend_title">Title</label>
-            <input id="plot-legend_title" type="text" class="shiny-input-text form-control" value="Bar Chart"/>
+            <input id="plot-legend_title" type="text" class="shiny-input-text form-control" value="Bar Chart" data-update-on="change"/>
           </div>
         </div>
       </details>
@@ -368,13 +362,13 @@
         <div class="col-sm-5" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-label_revenue-label" for="plot-label_revenue">Revenue</label>
-            <input id="plot-label_revenue" type="text" class="shiny-input-text form-control" value="Revenue"/>
+            <input id="plot-label_revenue" type="text" class="shiny-input-text form-control" value="Revenue" data-update-on="change"/>
           </div>
         </div>
         <div class="col-sm-5 offset-md-2 col-sm-offset-2" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-label_customer-label" for="plot-label_customer">Customers</label>
-            <input id="plot-label_customer" type="text" class="shiny-input-text form-control" value="Customers"/>
+            <input id="plot-label_customer" type="text" class="shiny-input-text form-control" value="Customers" data-update-on="change"/>
           </div>
         </div>
       </details>
@@ -399,7 +393,7 @@
           <div class="col-sm-4" align="left">
             <div class="form-group shiny-input-container">
               <label class="control-label" id="plot-bins-label" for="plot-bins"></label>
-              <input id="plot-bins" type="number" class="shiny-input-number form-control" value="9"/>
+              <input id="plot-bins" type="number" class="shiny-input-number form-control" value="9" data-update-on="change"/>
             </div>
           </div>
         </div>
@@ -415,7 +409,7 @@
         <div class="col-sm-12" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-brewer_name-label" for="plot-brewer_name">Brewer Name</label>
-            <input id="plot-brewer_name" type="text" class="shiny-input-text form-control" value="PuBu"/>
+            <input id="plot-brewer_name" type="text" class="shiny-input-text form-control" value="PuBu" data-update-on="change"/>
           </div>
         </div>
       </details>
@@ -430,13 +424,13 @@
         <div class="col-sm-5" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-x_axis_label-label" for="plot-x_axis_label">X Axis</label>
-            <input id="plot-x_axis_label" type="text" class="shiny-input-text form-control" value="Monetary Score"/>
+            <input id="plot-x_axis_label" type="text" class="shiny-input-text form-control" value="Monetary Score" data-update-on="change"/>
           </div>
         </div>
         <div class="col-sm-5 offset-md-2 col-sm-offset-2" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-y_axis_label-label" for="plot-y_axis_label">Y Axis</label>
-            <input id="plot-y_axis_label" type="text" class="shiny-input-text form-control" value=""/>
+            <input id="plot-y_axis_label" type="text" class="shiny-input-text form-control" value="" data-update-on="change"/>
           </div>
         </div>
       </details>
@@ -451,13 +445,13 @@
         <div class="col-sm-5" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-sec_x_axis_label-label" for="plot-sec_x_axis_label">X Axis</label>
-            <input id="plot-sec_x_axis_label" type="text" class="shiny-input-text form-control" value="Frequency Score"/>
+            <input id="plot-sec_x_axis_label" type="text" class="shiny-input-text form-control" value="Frequency Score" data-update-on="change"/>
           </div>
         </div>
         <div class="col-sm-5 offset-md-2 col-sm-offset-2" align="left">
           <div class="form-group shiny-input-container">
             <label class="control-label" id="plot-sec_y_axis_label-label" for="plot-sec_y_axis_label">Y Axis</label>
-            <input id="plot-sec_y_axis_label" type="text" class="shiny-input-text form-control" value="Recency Score"/>
+            <input id="plot-sec_y_axis_label" type="text" class="shiny-input-text form-control" value="Recency Score" data-update-on="change"/>
           </div>
         </div>
       </details>
@@ -490,16 +484,10 @@
       <div class="nav-buttons">
         <div class="row">
           <div class="col-sm-6" align="left">
-            <button class="btn btn-default action-button btn-back" id="plot-back" onclick="App.highlightTab(this, &#39;scatter-back&#39;)" type="button">
-              <i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i>
-              Back
-            </button>
+            <button class="btn btn-default action-button btn-back" id="plot-back" onclick="App.highlightTab(this, &#39;scatter-back&#39;)" type="button"><span class="action-icon"><i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i></span><span class="action-label">Back</span></button>
           </div>
           <div class="col-sm-6" align="right">
-            <button class="btn btn-default action-button btn-next" id="plot-next" type="button">
-              <i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i>
-              Next
-            </button>
+            <button class="btn btn-default action-button btn-next" id="plot-next" type="button"><span class="action-icon"><i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i></span><span class="action-label">Next</span></button>
           </div>
         </div>
       </div>
@@ -514,10 +502,7 @@
           <h4>Modify Plot</h4>
         </div>
         <div class="col-sm-6" align="right">
-          <button class="btn btn-default action-button btn_minimize" id="plot-btn_minimize" onclick="App.plotOptions(this, &#39;resize&#39;)" type="button">
-            <i class="far fa-window-minimize" role="presentation" aria-label="window-minimize icon"></i>
-            
-          </button>
+          <button class="btn btn-default action-button btn_minimize" id="plot-btn_minimize" onclick="App.plotOptions(this, &#39;resize&#39;)" type="button"><span class="action-icon"><i class="far fa-window-minimize" role="presentation" aria-label="window-minimize icon"></i></span><span class="action-label"></span></button>
         </div>
         <div class="col-sm-12" align="center">
           <hr/>

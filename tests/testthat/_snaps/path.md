@@ -28,19 +28,16 @@
               <div class="col-sm-12" align="center">
                 <div class="form-group shiny-input-container">
                   <label class="control-label" id="add_path-path-label" for="add_path-path">Directory</label>
-                  <input id="add_path-path" type="text" class="shiny-input-text form-control" value=""/>
+                  <input id="add_path-path" type="text" class="shiny-input-text form-control" value="" data-update-on="change"/>
                 </div>
-                <button class="btn btn-default action-button btn-path" id="add_path-btn_lookup_path" type="button">Retrieve Path</button>
-                <button class="btn btn-default action-button btn-retrieve" id="add_path-btn_save_path" type="button">Retrieve Projects</button>
+                <button class="btn btn-default action-button btn-path" id="add_path-btn_lookup_path" type="button"><span class="action-label">Retrieve Path</span></button>
+                <button class="btn btn-default action-button btn-retrieve" id="add_path-btn_save_path" type="button"><span class="action-label">Retrieve Projects</span></button>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6" align="left">
-              <button class="btn btn-default action-button btn-back" id="add_path-back" onclick="App.highlightTab(this, &#39;upload-tab&#39;)" type="button">
-                <i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i>
-                Back
-              </button>
+              <button class="btn btn-default action-button btn-back" id="add_path-back" onclick="App.highlightTab(this, &#39;upload-tab&#39;)" type="button"><span class="action-icon"><i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i></span><span class="action-label">Back</span></button>
             </div>
           </div>
         </div>

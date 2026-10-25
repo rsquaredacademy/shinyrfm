@@ -135,7 +135,6 @@ generate_score_server <- function(id, parent, data_flag, data, type_flag) {
         position = "bottomCenter"
       )
 
-      Sys.sleep(2)
       updateTabItems(session = parent, "tabs", "tab_rfm_score")
     })
 

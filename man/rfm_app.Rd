@@ -6,6 +6,15 @@
 \usage{
 rfm_app()
 }
+\value{
+A Shiny application object of class \code{shiny.appobj}; printing it
+launches the app.
+}
 \description{
 Launches the RFM shiny application.
+}
+\examples{
+if (interactive()) {
+  rfm_app()
+}
 }

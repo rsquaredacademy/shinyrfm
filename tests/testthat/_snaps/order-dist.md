@@ -23,10 +23,10 @@
                 </div>
                 <div class="col-sm-6 offset-md-2 col-sm-offset-2" align="right">
                   <div class="col-sm-4 offset-md-4 col-sm-offset-4" align="center">
-                    <button class="btn btn-default action-button btn_customize_plot" id="order_dist-btn_customize" onclick="App.plotOptions(this, &#39;customize&#39;)" style="width:120px;" type="button">Modify</button>
+                    <button class="btn btn-default action-button btn_customize_plot" id="order_dist-btn_customize" onclick="App.plotOptions(this, &#39;customize&#39;)" style="width:120px;" type="button"><span class="action-label">Modify</span></button>
                   </div>
                   <div class="col-sm-4" align="right">
-                    <button class="btn btn-default action-button btn_download_opt" id="order_dist-btn_download_opt" onclick="App.plotOptions(this, &#39;toggle&#39;)" style="width:120px;" type="button">Export</button>
+                    <button class="btn btn-default action-button btn_download_opt" id="order_dist-btn_download_opt" onclick="App.plotOptions(this, &#39;toggle&#39;)" style="width:120px;" type="button"><span class="action-label">Export</span></button>
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@
                       </div>
                     </div>
                     <div class="col-sm-4" align="right">
-                      <a id="order_dist-btn_download_plot" class="btn btn-default shiny-download-link disabled" href="" target="_blank" download aria-disabled="true" tabindex="-1">
+                      <a aria-disabled="true" class="btn btn-default shiny-download-link disabled" download href="" id="order_dist-btn_download_plot" tabindex="-1" target="_blank">
                         <i class="fas fa-download" role="presentation" aria-label="download icon"></i>
                         Download
                       </a>
@@ -74,10 +74,7 @@
                       <h4>Modify Plot</h4>
                     </div>
                     <div class="col-sm-6" align="right">
-                      <button class="btn btn-default action-button btn_minimize" id="order_dist-btn_minimize" onclick="App.plotOptions(this, &#39;resize&#39;)" type="button">
-                        <i class="far fa-window-minimize" role="presentation" aria-label="window-minimize icon"></i>
-                        
-                      </button>
+                      <button class="btn btn-default action-button btn_minimize" id="order_dist-btn_minimize" onclick="App.plotOptions(this, &#39;resize&#39;)" type="button"><span class="action-icon"><i class="far fa-window-minimize" role="presentation" aria-label="window-minimize icon"></i></span><span class="action-label"></span></button>
                     </div>
                     <div class="col-sm-12" align="center">
                       <hr/>
@@ -88,7 +85,7 @@
                     <div class="col-sm-12" align="left">
                       <div class="form-group shiny-input-container">
                         <label class="control-label" id="order_dist-plot_title-label" for="order_dist-plot_title">Plot title</label>
-                        <input id="order_dist-plot_title" type="text" class="shiny-input-text form-control" value="Customer Distribution by Orders"/>
+                        <input id="order_dist-plot_title" type="text" class="shiny-input-text form-control" value="Customer Distribution by Orders" data-update-on="change"/>
                       </div>
                     </div>
                   </details>
@@ -97,13 +94,13 @@
                     <div class="col-sm-5" align="left">
                       <div class="form-group shiny-input-container">
                         <label class="control-label" id="order_dist-x_axis_label-label" for="order_dist-x_axis_label">X Axis Label</label>
-                        <input id="order_dist-x_axis_label" type="text" class="shiny-input-text form-control" value="Orders"/>
+                        <input id="order_dist-x_axis_label" type="text" class="shiny-input-text form-control" value="Orders" data-update-on="change"/>
                       </div>
                     </div>
                     <div class="col-sm-5 offset-md-2 col-sm-offset-2" align="left">
                       <div class="form-group shiny-input-container">
                         <label class="control-label" id="order_dist-y_axis_label-label" for="order_dist-y_axis_label">Y Axis Label</label>
-                        <input id="order_dist-y_axis_label" type="text" class="shiny-input-text form-control" value="Customers"/>
+                        <input id="order_dist-y_axis_label" type="text" class="shiny-input-text form-control" value="Customers" data-update-on="change"/>
                       </div>
                     </div>
                   </details>
@@ -135,7 +132,7 @@
                       <div class="col-sm-4" align="left">
                         <div class="form-group shiny-input-container">
                           <label class="control-label" id="order_dist-bar_label_size-label" for="order_dist-bar_label_size"></label>
-                          <input id="order_dist-bar_label_size" type="number" class="shiny-input-number form-control" value="2.5" min="1" step="0.1"/>
+                          <input id="order_dist-bar_label_size" type="number" class="shiny-input-number form-control" value="2.5" data-update-on="change" min="1" step="0.1"/>
                         </div>
                       </div>
                     </div>
@@ -166,16 +163,10 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-6" align="center">
-                    <button class="btn btn-default action-button btn_reset_plot" id="order_dist-btn_reset" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button">
-                      <i class="fas fa-arrow-rotate-left" role="presentation" aria-label="arrow-rotate-left icon"></i>
-                      Reset
-                    </button>
+                    <button class="btn btn-default action-button btn_reset_plot" id="order_dist-btn_reset" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button"><span class="action-icon"><i class="fas fa-arrow-rotate-left" role="presentation" aria-label="arrow-rotate-left icon"></i></span><span class="action-label">Reset</span></button>
                   </div>
                   <div class="col-sm-6" align="center">
-                    <button class="btn btn-default action-button btn_resize_plot" id="order_dist-btn_resize" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button">
-                      <i class="fas fa-check" role="presentation" aria-label="check icon"></i>
-                      Generate
-                    </button>
+                    <button class="btn btn-default action-button btn_resize_plot" id="order_dist-btn_resize" onclick="App.plotOptions(this, &#39;resize&#39;)" style="width:120px;" type="button"><span class="action-icon"><i class="fas fa-check" role="presentation" aria-label="check icon"></i></span><span class="action-label">Generate</span></button>
                   </div>
                 </div>
               </div>
@@ -187,16 +178,10 @@
           <div class="nav-buttons">
             <div class="row">
               <div class="col-sm-6" align="left">
-                <button class="btn btn-default action-button btn-back" id="order_dist-back" onclick="App.highlightTab(this, &#39;back-tab&#39;)" type="button">
-                  <i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i>
-                  Back
-                </button>
+                <button class="btn btn-default action-button btn-back" id="order_dist-back" onclick="App.highlightTab(this, &#39;back-tab&#39;)" type="button"><span class="action-icon"><i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i></span><span class="action-label">Back</span></button>
               </div>
               <div class="col-sm-6" align="right">
-                <button class="btn btn-default action-button btn-next" id="order_dist-next" type="button">
-                  <i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i>
-                  Next
-                </button>
+                <button class="btn btn-default action-button btn-next" id="order_dist-next" type="button"><span class="action-icon"><i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i></span><span class="action-label">Next</span></button>
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 1-label" for="segment-segment_name_ 1"></label>
-                <input id="segment-segment_name_ 1" type="text" class="shiny-input-text form-control" value="Champions"/>
+                <input id="segment-segment_name_ 1" type="text" class="shiny-input-text form-control" value="Champions" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -47,7 +47,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_1" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_1" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 2-label" for="segment-segment_name_ 2"></label>
-                <input id="segment-segment_name_ 2" type="text" class="shiny-input-text form-control" value="Potential Loyalist"/>
+                <input id="segment-segment_name_ 2" type="text" class="shiny-input-text form-control" value="Potential Loyalist" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -78,7 +78,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_2" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_2" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 3-label" for="segment-segment_name_ 3"></label>
-                <input id="segment-segment_name_ 3" type="text" class="shiny-input-text form-control" value="Loyal Customers"/>
+                <input id="segment-segment_name_ 3" type="text" class="shiny-input-text form-control" value="Loyal Customers" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -109,7 +109,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_3" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_3" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 4-label" for="segment-segment_name_ 4"></label>
-                <input id="segment-segment_name_ 4" type="text" class="shiny-input-text form-control" value="Promising"/>
+                <input id="segment-segment_name_ 4" type="text" class="shiny-input-text form-control" value="Promising" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -140,7 +140,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_4" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_4" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 5-label" for="segment-segment_name_ 5"></label>
-                <input id="segment-segment_name_ 5" type="text" class="shiny-input-text form-control" value="New Customers"/>
+                <input id="segment-segment_name_ 5" type="text" class="shiny-input-text form-control" value="New Customers" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -171,7 +171,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_5" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_5" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 6-label" for="segment-segment_name_ 6"></label>
-                <input id="segment-segment_name_ 6" type="text" class="shiny-input-text form-control" value="Can&#39;t Lose Them"/>
+                <input id="segment-segment_name_ 6" type="text" class="shiny-input-text form-control" value="Can&#39;t Lose Them" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -202,7 +202,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_6" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_6" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 7-label" for="segment-segment_name_ 7"></label>
-                <input id="segment-segment_name_ 7" type="text" class="shiny-input-text form-control" value="At Risk"/>
+                <input id="segment-segment_name_ 7" type="text" class="shiny-input-text form-control" value="At Risk" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -233,7 +233,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_7" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_7" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -242,7 +242,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 8-label" for="segment-segment_name_ 8"></label>
-                <input id="segment-segment_name_ 8" type="text" class="shiny-input-text form-control" value="Need Attention"/>
+                <input id="segment-segment_name_ 8" type="text" class="shiny-input-text form-control" value="Need Attention" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -264,7 +264,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_8" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_8" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -273,7 +273,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 9-label" for="segment-segment_name_ 9"></label>
-                <input id="segment-segment_name_ 9" type="text" class="shiny-input-text form-control" value="About To Sleep"/>
+                <input id="segment-segment_name_ 9" type="text" class="shiny-input-text form-control" value="About To Sleep" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -295,7 +295,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_9" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_9" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -304,7 +304,7 @@
             <div class="col-sm-2" align="center">
               <div class="form-group shiny-input-container" style="width:150px;">
                 <label class="control-label" id="segment-segment_name_ 10-label" for="segment-segment_name_ 10"></label>
-                <input id="segment-segment_name_ 10" type="text" class="shiny-input-text form-control" value="Lost"/>
+                <input id="segment-segment_name_ 10" type="text" class="shiny-input-text form-control" value="Lost" data-update-on="change"/>
               </div>
             </div>
             <div class="col-sm-3">
@@ -326,7 +326,7 @@
               </div>
             </div>
             <div class="col-sm-1" align="center">
-              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_10" type="button">Remove</button>
+              <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_10" type="button"><span class="action-label">Remove</span></button>
             </div>
           </div>
         </div>
@@ -335,19 +335,19 @@
       <div class="row">
         <div class="col-sm-8" align="left">
           <br/>
-          <button id="segment-restore_segment" type="button" class="btn btn-default action-button">Restore Segments</button>
+          <button id="segment-restore_segment" type="button" class="btn btn-default action-button"><span class="action-label">Restore Segments</span></button>
           <br/>
           <br/>
         </div>
         <div class="col-sm-2" align="right">
           <br/>
-          <button id="segment-add_new_segment" type="button" class="btn btn-default action-button">Add Segment</button>
+          <button id="segment-add_new_segment" type="button" class="btn btn-default action-button"><span class="action-label">Add Segment</span></button>
           <br/>
           <br/>
         </div>
         <div class="col-sm-2" align="right">
           <br/>
-          <button id="segment-btn_create_segments" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)">Generate Segments</button>
+          <button id="segment-btn_create_segments" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)"><span class="action-label">Generate Segments</span></button>
           <br/>
           <br/>
         </div>
@@ -397,7 +397,7 @@
               <div class="col-sm-2" align="center">
                 <div class="form-group shiny-input-container" style="width:150px;">
                   <label class="control-label" id="segment-segment_name_ 1-label" for="segment-segment_name_ 1"></label>
-                  <input id="segment-segment_name_ 1" type="text" class="shiny-input-text form-control" value="Champions"/>
+                  <input id="segment-segment_name_ 1" type="text" class="shiny-input-text form-control" value="Champions" data-update-on="change"/>
                 </div>
               </div>
               <div class="col-sm-3">
@@ -419,7 +419,7 @@
                 </div>
               </div>
               <div class="col-sm-1" align="center">
-                <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_1" type="button">Remove</button>
+                <button class="btn btn-default action-button btn-delete" id="segment-btn_remove_segment_1" type="button"><span class="action-label">Remove</span></button>
               </div>
             </div>
           </div>
@@ -428,19 +428,19 @@
         <div class="row">
           <div class="col-sm-8" align="left">
             <br/>
-            <button id="segment-restore_segment" type="button" class="btn btn-default action-button">Restore Segments</button>
+            <button id="segment-restore_segment" type="button" class="btn btn-default action-button"><span class="action-label">Restore Segments</span></button>
             <br/>
             <br/>
           </div>
           <div class="col-sm-2" align="right">
             <br/>
-            <button id="segment-add_new_segment" type="button" class="btn btn-default action-button">Add Segment</button>
+            <button id="segment-add_new_segment" type="button" class="btn btn-default action-button"><span class="action-label">Add Segment</span></button>
             <br/>
             <br/>
           </div>
           <div class="col-sm-2" align="right">
             <br/>
-            <button id="segment-btn_create_segments" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)">Generate Segments</button>
+            <button id="segment-btn_create_segments" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)"><span class="action-label">Generate Segments</span></button>
             <br/>
             <br/>
           </div>
@@ -455,19 +455,19 @@
       <div class="row">
         <div class="col-sm-8" align="left">
           <br/>
-          <button id="segment-restore_segment" type="button" class="btn btn-default action-button">Restore Segments</button>
+          <button id="segment-restore_segment" type="button" class="btn btn-default action-button"><span class="action-label">Restore Segments</span></button>
           <br/>
           <br/>
         </div>
         <div class="col-sm-2" align="right">
           <br/>
-          <button id="segment-add_new_segment" type="button" class="btn btn-default action-button">Add Segment</button>
+          <button id="segment-add_new_segment" type="button" class="btn btn-default action-button"><span class="action-label">Add Segment</span></button>
           <br/>
           <br/>
         </div>
         <div class="col-sm-2" align="right">
           <br/>
-          <button id="segment-btn_create_segments" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)">Generate Segments</button>
+          <button id="segment-btn_create_segments" type="button" class="btn btn-default action-button" onclick="App.plotOptions(this, &#39;display&#39;)"><span class="action-label">Generate Segments</span></button>
           <br/>
           <br/>
         </div>

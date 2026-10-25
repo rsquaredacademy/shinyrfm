@@ -25,8 +25,8 @@
               </div>
             </div>
             <div class="row">
-              <button class="btn btn-default action-button btn-select" id="select-btn_select_all" style="width:150px;" type="button">Select All</button>
-              <button class="btn btn-default action-button btn-clear" id="select-btn_clear_all" style="width:150px;" type="button">Clear</button>
+              <button class="btn btn-default action-button btn-select" id="select-btn_select_all" style="width:150px;" type="button"><span class="action-label">Select All</span></button>
+              <button class="btn btn-default action-button btn-clear" id="select-btn_clear_all" style="width:150px;" type="button"><span class="action-label">Clear</span></button>
             </div>
             <div class="row">
               <div class="col-sm-12" align="right">
@@ -40,10 +40,7 @@
               <div class="row">
                 <div class="col-sm-8"></div>
                 <div class="col-sm-4" align="left">
-                  <button class="btn btn-default action-button btn-select-columns" id="select-btn_select_columns" onclick="App.plotOptions(this, &#39;display&#39;)" style="width:150px;" type="button">
-                    <i class="fas fa-check" role="presentation" aria-label="check icon"></i>
-                    Select Columns
-                  </button>
+                  <button class="btn btn-default action-button btn-select-columns" id="select-btn_select_columns" onclick="App.plotOptions(this, &#39;display&#39;)" style="width:150px;" type="button"><span class="action-icon"><i class="fas fa-check" role="presentation" aria-label="check icon"></i></span><span class="action-label">Select Columns</span></button>
                 </div>
               </div>
             </div>
@@ -51,16 +48,10 @@
           <div class="nav-buttons">
             <div class="row">
               <div class="col-sm-6" align="left">
-                <button id="select-back" type="button" class="btn btn-default action-button">
-                  <i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i>
-                  Back
-                </button>
+                <button id="select-back" type="button" class="btn btn-default action-button"><span class="action-icon"><i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i></span><span class="action-label">Back</span></button>
               </div>
               <div class="col-sm-6" align="right">
-                <button class="btn btn-default action-button btn-next-delay" id="select-next" type="button">
-                  <i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i>
-                  Next
-                </button>
+                <button class="btn btn-default action-button btn-next-delay" id="select-next" type="button"><span class="action-icon"><i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i></span><span class="action-label">Next</span></button>
               </div>
             </div>
           </div>

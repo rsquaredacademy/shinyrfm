@@ -111,23 +111,17 @@
             </div>
             <div class="row">
               <div class="col-sm-12" align="center">
-                <button id="config-btn_config" type="button" class="btn btn-default action-button" onclick="App.highlightTab(this, &#39;next-tab&#39;)">Update</button>
+                <button id="config-btn_config" type="button" class="btn btn-default action-button" onclick="App.highlightTab(this, &#39;next-tab&#39;)"><span class="action-label">Update</span></button>
               </div>
             </div>
           </div>
           <div class="nav-buttons">
             <div class="row">
               <div class="col-sm-6" align="left">
-                <button class="btn btn-default action-button btn-back" id="config-back" type="button">
-                  <i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i>
-                  Back
-                </button>
+                <button class="btn btn-default action-button btn-back" id="config-back" type="button"><span class="action-icon"><i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i></span><span class="action-label">Back</span></button>
               </div>
               <div class="col-sm-6" align="right">
-                <button class="btn btn-default action-button btn-next" id="config-next" onclick="App.highlightTab(this, &#39;next-tab&#39;)" type="button">
-                  <i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i>
-                  Next
-                </button>
+                <button class="btn btn-default action-button btn-next" id="config-next" onclick="App.highlightTab(this, &#39;next-tab&#39;)" type="button"><span class="action-icon"><i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i></span><span class="action-label">Next</span></button>
               </div>
             </div>
           </div>

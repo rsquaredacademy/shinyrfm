@@ -50,16 +50,10 @@
           <div class="nav-buttons">
             <div class="row">
               <div class="col-sm-6" align="left">
-                <button class="btn btn-default action-button btn-back" id="generate_segment-back" onclick="App.highlightTab(this, &#39;back-tab&#39;)" type="button">
-                  <i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i>
-                  Back
-                </button>
+                <button class="btn btn-default action-button btn-back" id="generate_segment-back" onclick="App.highlightTab(this, &#39;back-tab&#39;)" type="button"><span class="action-icon"><i class="fas fa-arrow-left-long" role="presentation" aria-label="arrow-left-long icon"></i></span><span class="action-label">Back</span></button>
               </div>
               <div class="col-sm-6" align="right">
-                <button class="btn btn-default action-button btn-next btn-next-delay" id="generate_segment-next" type="button">
-                  <i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i>
-                  Next
-                </button>
+                <button class="btn btn-default action-button btn-next btn-next-delay" id="generate_segment-next" type="button"><span class="action-icon"><i class="fas fa-arrow-right-long" role="presentation" aria-label="arrow-right-long icon"></i></span><span class="action-label">Next</span></button>
               </div>
             </div>
           </div>
